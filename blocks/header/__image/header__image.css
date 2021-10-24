@@ -1,4 +1,6 @@
 .header__image {
-    max-width: 984px;
-    object-fit: contain;
+    max-width:  90.9vw;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }

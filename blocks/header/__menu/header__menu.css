@@ -1,7 +1,7 @@
 .header__menu {
-    min-width: 1184px;
+    width: 90.9vw;
     display: flex;
     justify-content: space-between;
-    margin: 0 48px;
+    margin: 0;
     padding: 0;
 }
