@@ -5,3 +5,13 @@
     margin: 0;
     padding: 0;
 }
+
+@media screen and (width: 320px) {
+    .header__menu {
+        width: 90.0vw;
+        margin: 16px 16px 0 16px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}

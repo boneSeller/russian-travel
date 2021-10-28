@@ -1,19 +1,16 @@
 @import url(../vendor/normalize.css);
-@import url(../blocks/page/page.css);
+
+
+
 
 @import url(../font-face.css);
 
 
-@import url(../blocks/logo/_place/logo_place_header.css);
 
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__menu/header__menu.css);
-@import url(../blocks/header/__nav/header__nav.css);
-@import url(../blocks/header/__link/header__link.css);
-@import url(../blocks/header/__title/header__title.css);
-@import url(../blocks/header/__image/header__image.css);
-@import url(../blocks/header/__subtitle/header__subtitile.css);
-@import url(../blocks/header/__text/header__text.css);
+
+
+
 
 /*Intro*/
 
@@ -31,6 +28,110 @@
 @import url(../blocks/places/__container/places__container.css);
 @import url(../blocks/places/__title/places__title.css);
 @import url(../blocks/places/__text/places__text.css);
+
+
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 48px;
+    background-color: #2A2C2F;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.header {
+    width: 1184px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.logo_place_header {
+    width: 176px;
+    height: 52px;
+    background-image: url(../../../images/header-logo.svg);
+}
+
+.header__nav {
+    margin: 18px 0 0 0 ;
+    padding: 0;
+}
+
+.header__nav:nth-child(1) {
+    margin: 18px 18px 0 0; 
+}
+
+
+.header__link {
+    color: white;
+}
+
+
+.lead {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+.header__title {
+    width: 720px;
+    font-size: 96px;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 104%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header__subtitle {
+    width: 62.5vw;
+    margin: 32px 144px 56px 144px;
+    padding: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 120%px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header__text {
+    width: 158px;
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__image {
+    max-width:  90.9vw;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
 
 .photo-grid-div {
     width: 200px;
@@ -103,6 +204,15 @@
     
 }
 
+.footer__link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 112%;
+    color: #FFFFFF;
+}
+
 .footer__copyright {
     font-family: Inter;
     font-style: normal;
@@ -110,8 +220,78 @@
     font-size: 14px;
     line-height: 114%;
     /* identical to box height, or 114% */
-
     text-align: right;
-
     color: #FFFFFF;
 }
+
+
+@media screen and (max-width: 1280px) {
+    .page {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 48px;
+        background-color: #2A2C2F;
+        color: white;
+    }
+
+    .header {
+        width: 928px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .page {
+        
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 24px;
+        background-color: #2A2C2F;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 320px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lead {
+        width: 320px;
+    }
+
+    .header__title {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+    /* or 110% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+
+    .header__subtitle {
+    width: 288px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+/* or 125% */
+
+text-align: center;
+
+color: #FFFFFF;
+    }
+}
+
