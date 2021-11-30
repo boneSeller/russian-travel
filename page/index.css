@@ -24,6 +24,7 @@
 
 
 .page {
+
     margin: 0 auto;
     padding: 0;
     background-color: #2A2C2F;
@@ -87,8 +88,8 @@
 
 
 .header__title {
-    width: 720px;
-    font-size: 6rem;
+    max-width: 720px;
+    font-size: max(40px , min(7.50vw ,96px));
     font-weight: bold;
     font-style: normal;
     font-weight: 900;
@@ -98,13 +99,13 @@
 }
 
 .header__subtitle {
-    width: 640px;
-    margin: 32px 144px 56px 144px;
+    max-width: 640px;
+    margin: 32px auto 56px;
     padding: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.875rem;
+    font-size: max(16px , min(5vw, 30px));
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
@@ -136,15 +137,45 @@
 
 .intro {
     padding: 92px 0 0 0;
+    margin-right: 148px;
+}
+
+@media screen and (max-width: 1280px) {
+    .intro {
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .intro {
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        max-width: 720px;
+        margin: 88px auto 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .intro {
+        max-width: 288px;
+        margin: 64px auto 0;
+        padding: 0;
+    }
 }
 
 .intro__title {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: 900;
-    font-size: 54px;
+    font-size: max(32px, min(4.22vw ,54px));
     line-height: 107%;
     color: #FFFFFF;
 }
@@ -174,24 +205,44 @@
 }
 
 .photo-grid {
-    width: 92.5vw;
+    max-width: 1184px;
     padding: 92px 0 0 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    grid-template-rows: repeat(auto-fit, minmax(213,1fr));
-    gap: 14px;
+    gap: 16px;
 }
 
+@media screen and (max-width: 1280px) {
+    .photo-grid {
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photo-grid {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .photo-grid {
+        gap: 12px;
+    }
+}
+
+
+
+
 .photo-grid__image {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.photo-grid-div {
-    width: 200px;
-    height: 200px;
-}
+
+
 
 .places {
     width: 100%;
@@ -213,7 +264,7 @@
         width: calc(100% - 48px*2);
         grid-template-columns: 440px 1fr;
         gap: 32px;
-        margin: 92px auto;
+        margin: 92px auto 0;
     }
 }
 
@@ -249,7 +300,10 @@
 }
 
 .places__container__link {
-    margin: 106px 0 48px;
+    display: flex; 
+    flex-flow: column;
+    justify-content: flex-end;
+    margin: 0 0 8px;
 }
 
 .places__link__text {
@@ -282,6 +336,7 @@
     font-size: max(16px, min(1.41vw, 18px));
     line-height: 163%;
     color: #FFFFFF;
+    margin: 0 0 26px;
 }
 
 .places__image {
