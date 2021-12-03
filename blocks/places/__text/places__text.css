@@ -2,7 +2,8 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: max(16px, min(1.41vw, 18px));
     line-height: 163%;
     color: #FFFFFF;
+    margin: 0 0 26px;
 }

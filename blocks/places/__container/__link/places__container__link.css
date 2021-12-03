@@ -1,0 +1,6 @@
+.places__container__link {
+    display: flex; 
+    flex-flow: column;
+    justify-content: flex-end;
+    margin: 0 0 8px;
+}

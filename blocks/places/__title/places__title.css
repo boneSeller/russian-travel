@@ -2,7 +2,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 900;
-    font-size: 72px;
+    font-size: max(32px, min(5.63vw, 72px));
     line-height: 106%;
     color: #FFFFFF;
     margin: 0;

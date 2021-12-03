@@ -1,0 +1,11 @@
+.places__link__text {
+    color:  #AAAAAA;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+/* identical to box height, or 100% */
+
+    letter-spacing: 2px;
+}
