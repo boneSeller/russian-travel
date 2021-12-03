@@ -6,4 +6,9 @@
     line-height: 100%;
     text-decoration-line: underline;
     color: #FFFFFF;
+    transition: 1s linear;
+}
+
+.places__link:hover {
+    opacity: 30%;
 }
