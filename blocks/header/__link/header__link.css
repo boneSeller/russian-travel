@@ -1,4 +1,7 @@
 .header__link {
+    font-size: max(18px, min(1.875vw, 24px));
+    line-height: 28px;
+    margin: 0 9px;
     color: white;
+    text-decoration: none;
 }
-

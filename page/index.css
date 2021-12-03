@@ -10,6 +10,18 @@
 @import url(../blocks/header/header.css);
 
 
+/* PAGE */
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/page__container/page__container.css);
+
+/* LOGO */
+@import url(../blocks/logo/_place/logo_place_header.css);
+
+/* HEADER */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__nav/header__nav.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/__link_ru/header__link_ru.css);
 
 
 /*Intro*/
@@ -20,17 +32,10 @@
 @import url(../blocks/photo-grid/__image/photo-grid__image.css);
 
 
+
 @import url(../blocks/places/places.css);
 
 
-.page {
-
-    margin: 0 auto;
-    padding: 0;
-    background-color: #2A2C2F;
-    color: white;
-
-}
 
 .page__container {
     margin: 24px auto 0;
@@ -41,45 +46,6 @@
 }
 
 
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-
-.logo_place_header {
-    width: 176px;
-    height: 52px;
-    background-image: url(../../../images/header-logo.svg);
-}
-
-.header__nav {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav:nth-child(1) {
-    margin: 18px 18px 0 0; 
-}
-
-
-.header__link {
-    font-size: max(18px, min(1.875vw, 24px));
-    line-height: 28px;
-    margin: 0 9px;
-    color: white;
-    text-decoration: none;
-}
-
-.header__link_ru {
-    text-decoration: underline;
-}
-
 .lead {
     display: flex;
     align-items: center;
@@ -87,7 +53,7 @@
 }
 
 
-.header__title {
+.lead__title {
     max-width: 720px;
     font-size: max(40px , min(7.50vw ,96px));
     font-weight: bold;
@@ -98,7 +64,7 @@
     color: #FFFFFF;
 }
 
-.header__subtitle {
+.lead__subtitle {
     max-width: 640px;
     margin: 32px auto 56px;
     padding: 0;
@@ -111,7 +77,7 @@
     color: #FFFFFF;
 }
 
-.header__text {
+.lead__text {
     width: 158px;
     margin: 8px 0 0 0;
     padding: 0;
@@ -125,8 +91,8 @@
     color: #FFFFFF;
 }
 
-.header__image {
-    max-width:  100%;
+.lead__image {
+    max-width:  984px;
     width: 100%;
     object-fit: cover;
     margin: 0;
@@ -136,8 +102,9 @@
 
 
 .intro {
+    margin: 0 auto;
     padding: 92px 0 0 0;
-    margin-right: 148px;
+    max-width: 984px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -169,6 +136,35 @@
     }
 }
 
+.intro__container {
+    padding: 0;
+    max-width: 690px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .intro__container {
+        max-width: 720px;
+    }
+    
+}
+    
+
+@media screen and (max-width: 1050px) {
+    .intro__container {
+        margin: 0 0 0 24px;
+        max-width: 720px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .intro__container {
+        margin: 0 auto;
+        max-width: 450px;
+    }
+}
+
 .intro__title {
     margin: 0;
     padding: 0;
@@ -181,18 +177,16 @@
 }
 
 .intro__text {
-    width: 67.6vw;
     margin: 40px 0 0 0;
     padding: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 163%;
 }
 
 .intro__list {
-    width: 67.6vw;
     margin: 33px 0 0 0;
     padding: 0;
     list-style-type: none;
@@ -347,19 +341,55 @@
 }
 
 .cover {
-    margin: 0 auto;
-    padding:0;
+    margin: 92px auto 0;
+    padding: 0;
     max-width: 1184px;
     width: 100%;
-    max-height: 740px;
-    min-height: 200px;
+    min-height: 740px;
     height: 100%;
+    position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
+
+.cover__link {
+    max-width: 1184px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cover-trains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transition: 1s linear;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.cover__link:hover {
+    opacity: 30%;
+}
+
+@media screen and (max-width: 1280px) {
+    .cover {
+        min-height: 640px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cover {
+        min-height: 480px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cover {
+        min-height: 200px;
+    }
+}
+
 
 
 .cover__title {
@@ -390,34 +420,63 @@
     z-index: 2;
 }
 
-.cover__link {
-    width: 
-    100%;
-    height: 100%; 
-    background-image: url(../images/cover-trains.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    transition: 1s linear;
-    z-index: 1;
-}
 
-.cover__link:hover {
-    opacity: 30%;
-}
 
 .footer {
-    margin: 92px 0 0 0;
+    margin: 92px auto 24px;
+    max-width: 1184px;
     padding: 0;
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+@media screen and (max-width: 1280px) {
+    .footer {
+        margin: 90px auto 24px;
+        max-width: 928px;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin: 88px auto 24px;
+        max-width: 720px;
+
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        max-width: 400px;
+        margin: 64px auto 24px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        margin: 64px auto 24px;
+        width: calc(100% - 16px*2);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+}
+
+
+
 .footer__link {
+    margin: 0 18px 0 0;
+    padding: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -426,7 +485,22 @@
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 720px) {
+
+    .footer__link {
+        margin: 0 0 32px;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 24px;
+        
+    }
+}
+
+
+
 .footer__copyright {
+    margin: 0;
+    padding: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -437,5 +511,9 @@
     color: #FFFFFF;
 }
 
-
+@media screen and (max-width: 425px) {
+    .footer__copyright {
+        margin: 16px 0 0;
+    }
+}
 
