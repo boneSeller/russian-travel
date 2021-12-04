@@ -1,4 +1,4 @@
-.places__container_link {
+.places__container-link {
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
