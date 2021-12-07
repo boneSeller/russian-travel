@@ -19,7 +19,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__nav/header__nav.css);
 @import url(../blocks/header/__link/header__link.css);
-@import url(../blocks/header/__link/__link_ru/header__link_ru.css);
+@import url(../blocks/header/__link/_ru/header__link_ru.css);
 
 
 /* LEAD */
@@ -69,7 +69,7 @@
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__link/footer__link.css);
-@import url(../blocks/footer/copyright/footer__copyright.css)
+@import url(../blocks/footer/__copyright/footer__copyright.css);
 
 
 

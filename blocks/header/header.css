@@ -8,7 +8,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-
     .header {
         max-width: 928px;
         margin: 0 auto;
@@ -17,7 +16,6 @@
 
 
 @media screen and (max-width: 1024px) {
-
     .header {
         max-width: 720px;
         margin: 0 auto;
@@ -25,18 +23,15 @@
 }
 
 @media screen and (max-width: 720px) {
-
     .header {
-    max-width: 600px;
-    margin: 0 auto;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 420px) {
-
     .header {
         max-width: 288px;
         margin: 0 auto;
     }
-    
 }

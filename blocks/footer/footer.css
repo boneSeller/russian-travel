@@ -12,7 +12,6 @@
     .footer {
         margin: 90px auto 24px;
         max-width: 928px;
-
     }
 }
 
@@ -20,7 +19,6 @@
     .footer {
         margin: 88px auto 24px;
         max-width: 720px;
-
     }
 }
 
@@ -32,7 +30,6 @@
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: flex-start;
-
     }
 }
 
@@ -44,6 +41,5 @@
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: flex-start;
-
     }
 }

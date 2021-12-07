@@ -1,4 +1,5 @@
 .header__link {
+    font-family: 'Inter', Arial, sans-serif;
     font-size: max(18px, min(1.875vw, 24px));
     line-height: 28px;
     margin: 0 9px;
