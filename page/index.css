@@ -1,5 +1,4 @@
 /* NORMALIZE */
-
 @import url(../vendor/normalize.css);
 
 
@@ -10,7 +9,7 @@
 
 /* PAGE */
 @import url(../blocks/page/page.css);
-@import url(../blocks/page/page__container/page__container.css);
+@import url(../blocks/page/__container/page__container.css);
 
 /* LOGO */
 @import url(../blocks/logo/logo.css);
@@ -19,7 +18,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__nav/header__nav.css);
 @import url(../blocks/header/__link/header__link.css);
-@import url(../blocks/header/__link/_ru/header__link_ru.css);
+@import url(../blocks/header/__link/_language/header__link_language.css);
 
 
 /* LEAD */
@@ -73,7 +72,14 @@
 
 
 
-
+.intro__number {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
 
 
 

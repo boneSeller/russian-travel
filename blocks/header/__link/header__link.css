@@ -5,4 +5,15 @@
     margin: 0 9px;
     color: white;
     text-decoration: none;
+    transition: 1s linear;
+}
+
+.header__link:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .header__link {
+        line-height: 111%;
+    }
 }

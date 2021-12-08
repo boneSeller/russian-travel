@@ -3,12 +3,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 100%;
+    line-height: 122%;
     text-decoration-line: underline;
     color: #FFFFFF;
     transition: 1s linear;
 }
 
 .places__link:hover {
-    opacity: 30%;
+    opacity: 0.8;
 }
