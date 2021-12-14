@@ -3,6 +3,8 @@
     height: 52px;
     background-image: url(../../images/header-logo.svg);
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 420px) {
