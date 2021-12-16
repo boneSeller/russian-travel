@@ -13,32 +13,39 @@
 
 @media screen and (max-width: 1279px) {
     .places__container {
-        max-width: 928px;
+        min-width: 928px;
         grid-template-columns: 440px 1fr;
-        gap: 32px;
-        margin: 80px 100 0;
+        gap: 48px 32px;
+        margin: 80px 48px 0;
     }
 
     .places__container:first-child {
-        margin: 92px 100px 0;
+        margin: 92px 48px 0;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .places__container {
-        max-width: 720px;
-        width: calc(100% - 24px*2);
-        margin: 82px auto;
-        gap: 28px;
+        min-width: 720px; 
+        margin: 73px 24px 0;
+        gap: 48px 28px;
         grid-template-columns: 340px 1fr;
     }
+
+    .places__container:first-child {
+        margin: 88px 24px 0;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .places__container {
-        max-width: 320px;
-        margin: 64px auto;
-        width: 100%;
+        min-width: 320px;
+        margin: 50px 0 0;
+        padding: 0;
+        gap: 0;
         grid-template-columns: 320px;
+    }
+    .places__container:first-child {
+        margin: 64px 0 0;
     }
 }

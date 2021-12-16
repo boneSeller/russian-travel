@@ -6,4 +6,40 @@
     line-height: 163%;
     color: #FFFFFF;
     margin: 0 0 26px;
+    padding: 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 1279px) {
+    .places__text {
+        font-size: 18px;
+        margin: 26px 0 0;
+    }
+
+    .places__text:first-of-type {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .places__text {
+        font-size: 16px;
+        margin: 25px 0 0;
+        overflow-wrap: break-word;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .places__text {
+        font-size: 16px;
+        margin: 25px 16px 0;
+
+    }
+
+    .places__text:first-of-type {
+        margin: 32px 16px 0;
+    }
 }

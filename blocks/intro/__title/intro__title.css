@@ -7,10 +7,26 @@
     font-size: max(32px, min(4.22vw ,54px));
     line-height: 107%;
     color: #FFFFFF;
+    text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1279px) {
     .intro__title {
+        font-size: 54px;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .intro__title {
+        font-size: 54px;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro__title {
+        font-size: 32px;
         line-height: 109%;
     }
 }
