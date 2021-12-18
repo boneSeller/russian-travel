@@ -39,13 +39,14 @@
 
 @media screen and (max-width:767px) {
     .places__container {
+        justify-content: center;
         min-width: 320px;
-        margin: 50px 0 0;
+        margin: 50px auto 0;
         padding: 0;
         gap: 0;
         grid-template-columns: 320px;
     }
     .places__container:first-child {
-        margin: 64px 0 0;
+        margin: 64px auto 0;
     }
 }

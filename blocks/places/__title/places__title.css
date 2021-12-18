@@ -7,14 +7,10 @@
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    overflow-wrap: break-word;
 }
 
 
 
-.places__title:first-child {
-    max-height: 152px;
-}
 
 @media screen and (max-width: 1279px) {
     .places__title {
@@ -27,9 +23,6 @@
         font-size: 42px;
         line-height: 46px;
     }
-    .places__title:first-child {
-        max-height: 92px;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -38,5 +31,4 @@
         line-height: 109%;
         margin: 0 16px 0;
     }
-
 }

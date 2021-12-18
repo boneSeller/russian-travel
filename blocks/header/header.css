@@ -7,6 +7,7 @@
     align-items: center;
 }
 
+
 @media screen and (max-width: 1279px) {
     .header {
         min-width: 928px;
@@ -25,14 +26,9 @@
 
 @media screen and (max-width: 767px) {
     .header {
-        max-width: 720px;
-        min-width: 425px;
+
+        min-width: 288px;
         margin: 16px 16px 0 16px;
     }
 }
 
-@media screen and (max-width: 425px) {
-    .header {
-        min-width: 288px;
-    }
-}
